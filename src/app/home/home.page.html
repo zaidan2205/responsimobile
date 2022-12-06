@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home Aplikasi</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item (click)="logout()">
+    <ion-icon slot="start" ios="exit-outline" md="exit-sharp"></ion-icon>
+    <ion-label>Logout</ion-label>
+  </ion-item>
+  <hr>
+  <center> Selamat datang, {{ nama }}</center>
+  <br><br>
+  <br><br>
+  <ion-list lines="full">
+    <ion-button type="button" [routerLink]="['/barang']" routerLinkActive="router-link-active" color="success" expand="block">Lihat Data Barang</ion-button>
+  </ion-list>
+</ion-content>
+ 
